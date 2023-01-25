@@ -32,13 +32,13 @@ public class PasswordGenerator {
 		String favouriteColor = inputContainer.nextLine();
 		
 		System.out.print("Inserisci la tua data di nascita (solo il giorno): ");
-		String dateBirthDay = inputContainer.nextLine();
+		int dateBirthDay = inputContainer.nextInt();
 		
 		System.out.print("Inserisci la tua data di nascita (solo il mese): ");
-		String dateBirthMonth = inputContainer.nextLine();
+		int dateBirthMonth = inputContainer.nextInt();
 		
 		System.out.print("Inserisci la tua data di nascita (solo l'anno): ");
-		String dateBirthYear = inputContainer.nextLine();	
+		int dateBirthYear = inputContainer.nextInt();	
 
 	}
 
