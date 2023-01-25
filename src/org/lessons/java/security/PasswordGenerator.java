@@ -41,10 +41,19 @@ public class PasswordGenerator {
 		System.out.print("Inserisci la tua data di nascita (solo l'anno): ");
 		int dateBirthYear = inputContainer.nextInt();
 		
-		
-		
 		inputContainer.close();
 		// Chiuso inputContainer
+		
+		int sumDateBirth = dateBirthDay + dateBirthMonth + dateBirthYear;
+		
+		System.out.println(
+				"Ti ho generato questa password personalizzata: " +
+				name + "-" +
+				surname + "-" +
+				favouriteColor + "-" +
+				sumDateBirth
+		);
+		
 	}
 
 }
