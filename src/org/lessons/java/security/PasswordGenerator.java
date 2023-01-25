@@ -18,7 +18,7 @@ public class PasswordGenerator {
 		// Esempio: ho un utente che si chiama Pinco Pallo, nato il 12/05/1994, il cui colore preferito è il magenta
 		//		La sua password sarà Pinco-Pallo-magenta-2011
 		
-		System.out.println("Benvenuto, sei nel password generator, immetti i tuoi dati per ricevere una password personalizzato!");
+		System.out.println("Benvenuto, sei nel Password Generator, immetti i tuoi dati per ricevere una password personalizzata!");
 		
 		// Aperto inputContainer
 		Scanner inputContainer = new Scanner(System.in);
