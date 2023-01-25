@@ -1,11 +1,11 @@
 package org.lessons.java.security;
 
-import java.util.Scanner;
-
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
+import java.util.Scanner; // Import per ricevere input
+import java.text.DecimalFormat; // Import per fare l'arrotondamento
 
 public class SondaggioOS {
+	
+	private static final DecimalFormat round = new DecimalFormat("0.00"); // Necessario per fare gli arrotondamenti
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,8 +14,6 @@ public class SondaggioOS {
 		
 		// Usiamo le variabili per fare semplici calcoli (es. percentuale)
 		// 		eventualmente applicando casting tra int e double.
-		
-		final DecimalFormat round = new DecimalFormat("0.00");
 		
 		System.out.println("Benvenuto, questo è un sondaggio per misurare l'utilizzo degli OS.");
 		
