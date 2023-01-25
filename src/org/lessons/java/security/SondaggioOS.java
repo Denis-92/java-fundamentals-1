@@ -2,6 +2,9 @@ package org.lessons.java.security;
 
 import java.util.Scanner;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 public class SondaggioOS {
 
 	public static void main(String[] args) {
@@ -11,6 +14,8 @@ public class SondaggioOS {
 		
 		// Usiamo le variabili per fare semplici calcoli (es. percentuale)
 		// 		eventualmente applicando casting tra int e double.
+		
+		final DecimalFormat round = new DecimalFormat("0.00");
 		
 		System.out.println("Benvenuto, questo è un sondaggio per misurare l'utilizzo degli OS.");
 		
@@ -32,17 +37,14 @@ public class SondaggioOS {
 		int totalUsers = usersWindows + usersLinux + usersMac;
 		
 		float percentageWindowsUsers = (float)usersWindows / (float)totalUsers *100;
-		System.out.println("Il " + percentageWindowsUsers + "% degli utenti usano Windows");
+		System.out.println("Il " + round.format(percentageWindowsUsers) + "% degli utenti usano Windows");
 		
 		float percentageLinuxUsers = (float)usersLinux / (float)totalUsers *100;
-		System.out.println("Il " + percentageLinuxUsers + "% degli utenti usano Linux");
+		System.out.println("Il " + round.format(percentageLinuxUsers) + "% degli utenti usano Linux");
 		
 		float percentageMacUsers = (float)usersMac / (float)totalUsers *100;
-		System.out.println("Il " + percentageMacUsers + "% degli utenti usano Mac");
+		System.out.println("Il " + round.format(percentageMacUsers) + "% degli utenti usano Mac");
 		
-		
-		
-
 	}
 
 }
