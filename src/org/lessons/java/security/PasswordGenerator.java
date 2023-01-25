@@ -1,5 +1,7 @@
 package org.lessons.java.security;
 
+import java.util.Scanner; // Import della classe Scanner per ricevere input
+
 public class PasswordGenerator {
 
 	public static void main(String[] args) {
@@ -15,6 +17,28 @@ public class PasswordGenerator {
 		
 		// Esempio: ho un utente che si chiama Pinco Pallo, nato il 12/05/1994, il cui colore preferito è il magenta
 		//		La sua password sarà Pinco-Pallo-magenta-2011
+		
+		System.out.println("Benvenuto, sei nel password generator, immetti i tuoi dati per ricevere una password personalizzato!");
+		
+		Scanner inputContainer = new Scanner(System.in);
+		
+		System.out.print("Inserisci il tuo nome: ");
+		String name = inputContainer.nextLine();
+		
+		System.out.print("Inserisci il tuo cognome: ");
+		String surname = inputContainer.nextLine();
+		
+		System.out.print("Inserisci il tuo colore preferito: ");
+		String favouriteColor = inputContainer.nextLine();
+		
+		System.out.print("Inserisci la tua data di nascita (solo il giorno): ");
+		String dateBirthDay = inputContainer.nextLine();
+		
+		System.out.print("Inserisci la tua data di nascita (solo il mese): ");
+		String dateBirthMonth = inputContainer.nextLine();
+		
+		System.out.print("Inserisci la tua data di nascita (solo l'anno): ");
+		String dateBirthYear = inputContainer.nextLine();	
 
 	}
 
