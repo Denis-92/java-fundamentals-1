@@ -20,6 +20,7 @@ public class PasswordGenerator {
 		
 		System.out.println("Benvenuto, sei nel password generator, immetti i tuoi dati per ricevere una password personalizzato!");
 		
+		// Aperto inputContainer
 		Scanner inputContainer = new Scanner(System.in);
 		
 		System.out.print("Inserisci il tuo nome: ");
@@ -38,8 +39,12 @@ public class PasswordGenerator {
 		int dateBirthMonth = inputContainer.nextInt();
 		
 		System.out.print("Inserisci la tua data di nascita (solo l'anno): ");
-		int dateBirthYear = inputContainer.nextInt();	
-
+		int dateBirthYear = inputContainer.nextInt();
+		
+		
+		
+		inputContainer.close();
+		// Chiuso inputContainer
 	}
 
 }
