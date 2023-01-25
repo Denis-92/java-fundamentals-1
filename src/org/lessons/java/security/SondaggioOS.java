@@ -34,13 +34,13 @@ public class SondaggioOS {
 		
 		int totalUsers = usersWindows + usersLinux + usersMac;
 		
-		double percentageWindowsUsers = 100F * usersWindows / totalUsers;
+		double percentageWindowsUsers = 100D * usersWindows / totalUsers;
 		System.out.println("Il " + round.format(percentageWindowsUsers) + "% degli utenti usano Windows");
 		
-		double percentageLinuxUsers = 100F * usersLinux / totalUsers;
+		double percentageLinuxUsers = 100D * usersLinux / totalUsers;
 		System.out.println("Il " + round.format(percentageLinuxUsers) + "% degli utenti usano Linux");
 		
-		double percentageMacUsers = 100F * usersMac / totalUsers;
+		double percentageMacUsers = 100D * usersMac / totalUsers;
 		System.out.println("Il " + round.format(percentageMacUsers) + "% degli utenti usano Mac");
 		
 	}
