@@ -10,24 +10,17 @@ public class FizzBuzz {
 		
 			
 		for (int i = 1; i <= 100; i++ ) {
-			
-			boolean fizz = i % 3 == 0;
-			
+			boolean fizz = i % 3 == 0;	
 			boolean buzz = i % 5 == 0;
 			
-			if (fizz && buzz) {
-				System.out.println("FizzBuzz");			
-			} else if (fizz) {
-				System.out.println("Fizz");
-			} else if( buzz) {
-				System.out.println("Buzz");
-			}
-			
-			if (!fizz && !buzz) {
+			if (!fizz && !buzz)
 				System.out.println(i);
-			}
+			else if (fizz & buzz)
+				System.out.println("FizzBuzz");
+			else if (fizz)
+				System.out.println("Fizz");
+			else if (buzz)
+				System.out.println("Buzz");			
 		}
-
 	}
-
 }
