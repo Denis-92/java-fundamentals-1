@@ -25,10 +25,5 @@ public class BonusCibiPreferiti {
 		int middleElementArray = Integer.parseInt(round.format( cibiPreferiti.length / 2 ));
 		
 		System.out.println("BONUS: Cibo preferito di metà classifica - " + cibiPreferiti[middleElementArray]);
-		
-		
-		
-
 	}
-
 }

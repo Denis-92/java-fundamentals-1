@@ -17,10 +17,10 @@ public class FizzBuzz {
 				System.out.println(i);
 			else if (fizz && buzz)
 					System.out.println("FizzBuzz");
-				else if (fizz)
-					System.out.println("Fizz");
-					else if (buzz)
-						System.out.println("Buzz");
+				 else {
+					if (fizz) System.out.println("Fizz");
+					if (buzz) System.out.println("Buzz");
+				 }			
 		}
 	}
 }

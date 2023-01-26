@@ -42,7 +42,5 @@ public class SondaggioOS {
 		
 		double percentageMacUsers = 100D * usersMac / totalUsers;
 		System.out.println("Il " + round.format(percentageMacUsers) + "% degli utenti usano Mac");
-		
 	}
-
 }

@@ -31,16 +31,8 @@ public class Palindrome {
 					firstProduct = i;
 					secondProduct = j;
 				}
-				
 			}
-		}
-		
+		}	
 		System.out.printf("Il nostro numero palindromo è: %d che è la moltiplicazione di %d %d", max, firstProduct, secondProduct);
-		
-		
-		
-		
-
 	}
-
 }

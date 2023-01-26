@@ -59,8 +59,6 @@ public class CheckGuest {
 			System.out.println(name + " che piacere vederla, la stavamo aspettando! Prego entri pure e buona serata!");
 		} else {
 			System.out.println("Se ne vada! Questo è un party esclusivo!!!");
-		}
-		
+		}		
 	}
-
 }

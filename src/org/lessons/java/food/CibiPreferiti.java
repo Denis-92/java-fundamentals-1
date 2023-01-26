@@ -30,7 +30,5 @@ public class CibiPreferiti {
 		int lastElementArray = cibiPreferiti.length - 1;
 		
 		System.out.println("Cibo preferito (ma non troppo...) - " + cibiPreferiti[lastElementArray]);	
-
 	}
-
 }

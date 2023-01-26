@@ -58,7 +58,5 @@ public class CalcolaBiglietto {
 		}
 		
 		System.out.print("Il prezzo del biglietto è: " + round.format(prezzoBiglietto) + "€");
-
 	}
-
 }
