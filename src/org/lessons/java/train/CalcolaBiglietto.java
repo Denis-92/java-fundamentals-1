@@ -31,6 +31,33 @@ public class CalcolaBiglietto {
 		
 		inputContainer.close();
 		// Chiuso inputContainer
+		
+		
+		float prezzoBase = 0.21F * distanzaTragitto;
+		
+		float scontoStudente = 0.2F;
+		
+		float scontoSenior = 0.4F;
+		
+		boolean passeggeroStudente = etaPasseggero < 18;
+		
+		boolean passeggeroSenior = etaPasseggero > 65;
+		
+		float prezzoFinale;
+		
+		if (passeggeroStudente) {
+			prezzoFinale = prezzoBase * (1F - scontoStudente);
+			System.out.print("Il prezzo del biglietto è: " + prezzoFinale + "€");
+		}
+		
+		if (passeggeroSenior) {
+			prezzoFinale = prezzoBase * (1F - scontoSenior);
+			System.out.print("Il prezzo del biglietto è: " + prezzoFinale + "€");
+		}
+		
+		if (!passeggeroStudente && !passeggeroSenior) {
+			System.out.print("Il prezzo del biglietto è: " + prezzoBase + "€");
+		}		
 
 	}
 
