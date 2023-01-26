@@ -11,23 +11,23 @@ public class FizzBuzz {
 			
 		for (int i = 1; i <= 100; i++ ) {
 			
-			boolean Fizz = i % 3 == 0;
+			boolean fizz = i % 3 == 0;
 			
-			boolean Buzz = i % 5 == 0;
+			boolean buzz = i % 5 == 0;
 			
-			if (Fizz && Buzz) {
+			if (fizz && buzz) {
 				
 				System.out.println("FizzBuzz");
 				
 			} else {
 				
-				if (Fizz) {
+				if (fizz) {
 					
 					System.out.println("Fizz");
 					
 				} else {
 					
-					if (Buzz) {
+					if (buzz) {
 				
 						System.out.println("Buzz");
 					
