@@ -1,8 +1,11 @@
 package org.lessons.java.train;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class CalcolaBiglietto {
+	
+	private static final DecimalFormat round = new DecimalFormat("0.00"); // Necessario per fare gli arrotondamenti
 
 	public static void main(String[] args) {
 
@@ -18,7 +21,7 @@ public class CalcolaBiglietto {
 		// Per acquisire l’input dell’utente usate la classe Scanner, come visto stamattina a lezione.
 		
 		
-		System.out.println("Benvenuto, inserisci i dati richiesti per calcolare il costo del biglietto.");
+		System.out.println("Benvenuto, inserisci i dati richiesti per calcolare il costo del biglietto del treno.");
 		
 		// Aperto inputContainer
 		Scanner inputContainer = new Scanner(System.in);
@@ -40,23 +43,25 @@ public class CalcolaBiglietto {
 		float scontoSenior = 0.4F;
 		
 		boolean passeggeroStudente = etaPasseggero < 18;
+		// System.out.println("Studente? " + passeggeroStudente);
 		
 		boolean passeggeroSenior = etaPasseggero > 65;
+		// System.out.println("Senior? " + passeggeroSenior);
 		
 		float prezzoFinale;
 		
 		if (passeggeroStudente) {
 			prezzoFinale = prezzoBase * (1F - scontoStudente);
-			System.out.print("Il prezzo del biglietto è: " + prezzoFinale + "€");
+			System.out.print("Il prezzo del biglietto è: " + round.format(prezzoFinale) + "€");
 		}
 		
 		if (passeggeroSenior) {
 			prezzoFinale = prezzoBase * (1F - scontoSenior);
-			System.out.print("Il prezzo del biglietto è: " + prezzoFinale + "€");
+			System.out.print("Il prezzo del biglietto è: " + round.format(prezzoFinale) + "€");
 		}
 		
 		if (!passeggeroStudente && !passeggeroSenior) {
-			System.out.print("Il prezzo del biglietto è: " + prezzoBase + "€");
+			System.out.print("Il prezzo del biglietto è: " + round.format(prezzoBase) + "€");
 		}		
 
 	}
