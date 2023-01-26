@@ -1,6 +1,11 @@
 package org.lessons.java.food;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 public class CibiPreferiti {
+	
+	private static final DecimalFormat round = new DecimalFormat("0"); // Necessario per fare gli arrotondamenti
 
 	public static void main(String[] args) {
 		// Nel programma inizializzate un array (con i metodi visti a lezione)
@@ -12,6 +17,32 @@ public class CibiPreferiti {
 		// Le modalità di consegna sono le solite:
 		//		repo GitHub, file .gitignore, commit e push
 		// BONUS Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana
+		
+		String[] cibiPreferiti = {
+				"Patate in tecia",
+				"Gnocchi di susine",
+				"Jota",
+				"Pizza rucola e grana",
+				"Pasta all'arrabbiata",
+				"Gnocchi al pomodoro",
+				"Pollo al forno"
+		};
+		
+		System.out.println("Sono presenti " + cibiPreferiti.length + " cibi nella lista.");
+		
+		System.out.println("Cibo preferito top!!! - " + cibiPreferiti[0]);
+		
+		int lastElementArray = cibiPreferiti.length - 1;
+		
+		System.out.println("Cibo preferito (ma non troppo...) - " + cibiPreferiti[lastElementArray]);
+		
+		round.setRoundingMode(RoundingMode.DOWN);
+		int middleElementArray = Integer.parseInt(round.format( cibiPreferiti.length / 2 ));
+		
+		System.out.println("Cibo preferito di metà classifica - " + cibiPreferiti[middleElementArray]);
+		
+		
+		
 
 	}
 
