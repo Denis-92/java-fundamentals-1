@@ -1,7 +1,7 @@
 package org.lessons.java.train;
 
 import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.util.Scanner; // Import della classe Scanner per ricevere input
 
 public class CalcolaBiglietto {
 	
