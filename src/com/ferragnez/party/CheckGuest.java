@@ -1,5 +1,7 @@
 package com.ferragnez.party;
 
+import java.util.Scanner; // Import della classe Scanner per ricevere input
+
 public class CheckGuest {
 
 	public static void main(String[] args) {
@@ -19,7 +21,46 @@ public class CheckGuest {
 				
 		// Lista invitati: Dua Lipa, Paris Hilton, Manuel Agnelli, J-Ax, Francesco Totti, Ilary Blasi,
 		//					Bebe Vio, Luis, Pardis Zarei, Martina Maccherone, Rachel Zeili
-
+		
+		String[] listaInvitati = {
+				"Dua Lipa",
+				"Paris Hilton",
+				"Manuel Agnelli",
+				"J-Ax",
+				"Francesco Totti",
+				"Ilary Blasi",
+				"Bebe Vio",
+				"Luis",
+				"Pardis Zarei",
+				"Martina Maccherone",
+				"Rachel Zeili"
+		};
+		
+		System.out.print("Benvenut* alla festa dei Ferragnez, posso chiederle il nome? ");
+		
+		// Aperto inputContainer
+		Scanner inputContainer = new Scanner(System.in);
+		
+		String name = inputContainer.nextLine();
+		
+		inputContainer.close();
+		// Chiuso inputContainer
+		
+		boolean invited = false;
+			
+		for ( int i = 0; i < listaInvitati.length; i++) {
+			if ( name.equalsIgnoreCase(listaInvitati[i]) ) {
+				invited = true;
+			}
+			//System.out.println(invited);
+		}
+		
+		if (invited) {
+			System.out.println(name + " che piacere vederla, la stavamo aspettando! Prego entri pure e buona serata!");
+		} else {
+			System.out.println("Se ne vada! Questo è un party esclusivo!!!");
+		}
+		
 	}
 
 }
