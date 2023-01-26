@@ -1,5 +1,7 @@
 package org.lessons.java.train;
 
+import java.util.Scanner;
+
 public class CalcolaBiglietto {
 
 	public static void main(String[] args) {
@@ -14,6 +16,21 @@ public class CalcolaBiglietto {
 		// aggiungete un package org.lessons.java e una classe CalcolaBiglietto.
 		// Il programma va implementato nel metodo main della classe CalcolaBiglietto.
 		// Per acquisire l’input dell’utente usate la classe Scanner, come visto stamattina a lezione.
+		
+		
+		System.out.println("Benvenuto, inserisci i dati richiesti per calcolare il costo del biglietto.");
+		
+		// Aperto inputContainer
+		Scanner inputContainer = new Scanner(System.in);
+		
+		System.out.print("Quanti chilometri devi percorrere? ");
+		int distanzaTragitto = Integer.parseInt(inputContainer.nextLine());
+		
+		System.out.print("Quanti anni ha il passeggero? ");
+		int etaPasseggero = Integer.parseInt(inputContainer.nextLine());
+		
+		inputContainer.close();
+		// Chiuso inputContainer
 
 	}
 
