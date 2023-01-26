@@ -16,27 +16,15 @@ public class FizzBuzz {
 			boolean buzz = i % 5 == 0;
 			
 			if (fizz && buzz) {
-				
-				System.out.println("FizzBuzz");
-				
-			} else {
-				
-				if (fizz) {
-					
-					System.out.println("Fizz");
-					
-				} else {
-					
-					if (buzz) {
-				
-						System.out.println("Buzz");
-					
-					} else {
-					
-						System.out.println(i);
-						
-					}
-				}	
+				System.out.println("FizzBuzz");			
+			} else if (fizz) {
+				System.out.println("Fizz");
+			} else if( buzz) {
+				System.out.println("Buzz");
+			}
+			
+			if (!fizz && !buzz) {
+				System.out.println(i);
 			}
 		}
 
